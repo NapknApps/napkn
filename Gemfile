@@ -41,3 +41,5 @@ gem 'spring',        group: :development
 gem 'rails_12factor', group: :production
 gem 'puma'
 gem 'bootstrap-sass', '~> 3.3.5'
+gem 'google-analytics-rails'
+
