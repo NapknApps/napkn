@@ -1,17 +1,48 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+@import url(http://fonts.googleapis.com/css?family=Questrial);
 
 body { 
 
 }
 
+.box1 {
+  background: #fe8570;
+  height: 300px;
+}
+
+.box2 {
+  background: #6f9cfd;
+  height: 300px;
+}
+
+.box3 {
+  background: #f962fa;
+  height: 300px;
+}
+
+.box4 {
+  background: #feab72;
+  height: 300px;
+}
+
+.box5 {
+  background: #71d0fe;
+  height: 300px;
+}
+
+.box6 {
+  background: #c672fd;
+  height: 300px;
+}
+
 .header { 
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-weight: 600;
 	margin-top: 60px;
   color: #fe6e70;
-  font-size: 300%;
+  font-size: 320%;
   text-align: center
 }
 
@@ -21,7 +52,9 @@ body {
 	margin-top: 60px;
   color: #000000;
   font-size: 150%;
-  text-align: center
+  text-align: center;
+  line-height: 180%;
+  letter-spacing: .5px;
 }
 
 .action { 
@@ -39,6 +72,7 @@ body {
   padding: 14px 24px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  width: 350px;
 }
 
 .action-btn:hover { 
