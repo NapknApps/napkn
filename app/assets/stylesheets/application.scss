@@ -7,34 +7,76 @@ body {
 
 }
 
+.week-label {
+  text-align: right;
+  line-height: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.app-icon-holder {
+  text-align: center;
+  width: 140px;
+  height: 140px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.app-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 160%;
+  text-align: center;
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: #FFFFFF;
+}
+
+.app-description {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 120%;
+  text-align: center;
+  width: 90%;
+  height: 70px;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #FFFFFF;
+}
+
 .box1 {
   background: #fe8570;
-  height: 300px;
+  height: 340px;
 }
 
 .box2 {
   background: #6f9cfd;
-  height: 300px;
+  height: 340px;
 }
 
 .box3 {
   background: #f962fa;
-  height: 300px;
+  height: 340px;
 }
 
 .box4 {
   background: #feab72;
-  height: 300px;
+  height: 340px;
 }
 
 .box5 {
   background: #71d0fe;
-  height: 300px;
+  height: 340px;
 }
 
 .box6 {
   background: #c672fd;
-  height: 300px;
+  height: 340px;
 }
 
 .header { 
@@ -43,7 +85,7 @@ body {
 	margin-top: 60px;
   color: #fe6e70;
   font-size: 320%;
-  text-align: center
+  text-align: center;
 }
 
 .proclamation { 
@@ -72,7 +114,6 @@ body {
   padding: 14px 24px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  width: 350px;
 }
 
 .action-btn:hover { 
