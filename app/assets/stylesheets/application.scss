@@ -25,6 +25,16 @@ body {
   width: 100%;
 }
 
+.block-image {
+  margin-top: 25px;
+  margin-bottom: 65px;
+  background: #f6f6f6;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .week-label {
   text-align: right;
   line-height: 40px;
@@ -100,6 +110,16 @@ body {
   font-size: 150%;
   text-align: center;
   line-height: 180%;
+  letter-spacing: .5px;
+}
+
+.title { 
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-top: 90px;
+  color: #000000;
+  font-size: 300%;
+  line-height: 200%;
   letter-spacing: .5px;
 }
 

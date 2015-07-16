@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'posts/', :to => 'posts#index'
 
+  get 'posts/launching_napkn', :to => 'posts#launching_napkn'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
