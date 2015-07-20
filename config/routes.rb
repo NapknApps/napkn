@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   
   get 'apps/carl_is_hungry', :to => 'apps#carl_is_hungry'
   get 'apps/nomojo', :to => 'apps#nomojo'
+  get 'apps/envoyer', :to => 'apps#envoyer'
 
   get 'posts/', :to => 'posts#index'
 
