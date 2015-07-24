@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get 'posts/launching_napkn', :to => 'posts#launching_napkn'
   get 'posts/every_submitted_app_idea', :to => 'posts#every_submitted_app_idea'
+  get 'posts/calling_all_app_makers', :to => 'posts#calling_all_app_makers'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
