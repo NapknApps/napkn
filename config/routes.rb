@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
   
+  get '/treehouse', :to => 'welcome#treehouse'
+
   get 'apps/carl_is_hungry', :to => 'apps#carl_is_hungry'
   get 'apps/nomojo', :to => 'apps#nomojo'
   get 'apps/envoyer', :to => 'apps#envoyer'
