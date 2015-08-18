@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'apps/envoyer', :to => 'apps#envoyer'
   get 'apps/roll_out', :to => 'apps#roll_out'
   get 'apps/rtab', :to => 'apps#rtab'
+  get 'apps/sweet_nothings', :to => 'apps#sweet_nothings'
 
   get 'posts/', :to => 'posts#index'
 
