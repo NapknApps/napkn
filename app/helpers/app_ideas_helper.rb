@@ -1,0 +1,2 @@
+module AppIdeasHelper
+end

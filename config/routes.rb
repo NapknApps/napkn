@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :app_ideas
+
   root 'welcome#index'
   
   get '/treehouse', :to => 'welcome#treehouse'

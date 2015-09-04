@@ -44,3 +44,6 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'google-analytics-rails'
 gem 'newrelic_rpm'
 gem 'jquery-turbolinks'
+gem 'tweetstream'
+gem 'growl'
+
