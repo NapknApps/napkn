@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get 'posts/unique_gameplay_got_carl_rejected_from_the_app_store', :to => 'posts#unique_gameplay_got_carl_rejected_from_the_app_store'
   get 'posts/creating_roll_out', :to => 'posts#creating_roll_out'
   get 'posts/creating_nomojo', :to => 'posts#creating_nomojo'
+  get 'posts/creating_envoyer', :to => 'posts#creating_envoyer'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
