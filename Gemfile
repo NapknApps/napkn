@@ -45,5 +45,4 @@ gem 'google-analytics-rails'
 gem 'newrelic_rpm'
 gem 'jquery-turbolinks'
 gem 'tweetstream'
-gem 'growl'
-
+gem 'twitter'
