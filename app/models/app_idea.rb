@@ -1,5 +1,6 @@
 class AppIdea < ActiveRecord::Base
 
+	resourcify
 	after_create :notify_user
 
 	def self.create_from_tweet(status)
@@ -19,6 +20,14 @@ class AppIdea < ActiveRecord::Base
 		end
 
 	  client.update("@#{user_handle} great app idea! edit/share/upvote -> www.napkn.io/app_ideas/#{id}/edit")
+  end
+
+	def user_voted_for(user)
+	  if user.identities.count > 0
+	    user.identities.first.nickname == user_handle
+	  else
+	    false
+	  end
   end
 
 end
