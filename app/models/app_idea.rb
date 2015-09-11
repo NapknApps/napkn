@@ -26,10 +26,10 @@ class AppIdea < ActiveRecord::Base
 
 	def notify_user
 	  client = Twitter::REST::Client.new do |config|
-		  config.consumer_key        = ENV['TWITTER_CONSUMER_KEY']
-		  config.consumer_secret     = ENV['TWITTER_CONSUMER_SECRET']
-		  config.access_token        = ENV['TWITTER_OAUTH_TOKEN']
-		  config.access_token_secret = ENV['TWITTER_OAUTH_TOKEN_SECRET']
+		  config.consumer_key        = '15utLKJXcan5VfBZTfqrnkXdZ'
+		  config.consumer_secret     = 'DE9yeroPiZvM5geqG15e278J93hg7KjKNCp65Dfv5lARTaebwj'
+		  config.access_token        = '3332969963-ZLxPjZK547knNVpXCXtrXVGhvWBORAvfjuiGQoY'
+		  config.access_token_secret = '2FVjXrvXVVx1XCPiRCxTn7Er5gsEBSn3zPkQzdYCsI9qi'
 		end
 
 	  client.update("@#{user_handle} great app idea! edit/share/upvote -> www.napkn.io/app_ideas/#{id}/")
