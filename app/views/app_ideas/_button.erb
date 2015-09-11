@@ -1,0 +1,30 @@
+<div>
+  <div class="post-vote-button--arrow" style="text-align:center; margin-top:17px">
+    <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+      <% if user_signed_in? %>
+        <% if app_idea.user_effectively_voted_for(current_user) %>
+          <path d="M.524 7.42C-.318 8.846.342 10 2 10h7c1.657 0 2.317-1.156 1.476-2.58L6.516.72c-.56-.95-1.473-.947-2.032 0l-3.96 6.7z" fill="#fc6f73" fill-rule="evenodd"></path>
+        <% else %>
+          <path d="M.524 7.42C-.318 8.846.342 10 2 10h7c1.657 0 2.317-1.156 1.476-2.58L6.516.72c-.56-.95-1.473-.947-2.032 0l-3.96 6.7z" fill="#123132" fill-rule="evenodd"></path>
+        <% end %>
+      <% else %>
+        <path d="M.524 7.42C-.318 8.846.342 10 2 10h7c1.657 0 2.317-1.156 1.476-2.58L6.516.72c-.56-.95-1.473-.947-2.032 0l-3.96 6.7z" fill="#123132" fill-rule="evenodd"></path>
+      <% end %>
+    </svg>
+  </div>
+  <% if user_signed_in? %>
+    <% if app_idea.user_effectively_voted_for(current_user) %>
+      <div class="vote-button-count" style="text-align: center; font-size: 130%; color:#fc6f73;">
+        <%= app_idea.upvote_count %>
+      </div>
+    <% else %>
+      <div class="vote-button-count" style="text-align: center; font-size: 130%; color:#000000;">
+        <%= app_idea.upvote_count %>
+      </div>
+    <% end %>
+  <% else %>
+    <div class="vote-button-count" style="text-align: center; font-size: 130%; color:#000000;">
+      <%= app_idea.upvote_count %>
+    </div>
+  <% end %>
+</div>

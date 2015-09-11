@@ -1,9 +1,111 @@
-<p id="notice"><%= notice %></p>
+<nav class="navbar navbar-default" style="background-color: #fc6f73; border-color: #fc6f73;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><img src="/assets/logo_white.png" alt="" height="42" width="42" style="margin-top:-4px"/></a>
+    <ul class="nav navbar-nav navbar-right hidden-xs">
+      <li class="dropdown">
+        <% if signed_in? %>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src=<%= current_user.twitter.image%> class="img-circle" alt="" style="width:40px; height:40px; margin-top:-4px;"></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+          </ul>
+        <% else %>
+          <li><a href="/users/auth/twitter"><img src="/assets/login.png" alt="" height="40" width="40" style="margin-top:-4px"/></a></li>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-<p>
-  <strong>Tweet:</strong>
-  <%= @app_idea.tweet %>
-</p>
+<br>
 
-<%= link_to 'Edit', edit_app_idea_path(@app_idea) %> |
-<%= link_to 'Back', app_ideas_path %>
+
+<div class="container">
+
+      <div class="answer">
+      	<%= link_to 'App Ideas ↩', app_ideas_path, { :class=>"action-btn-edge" } %>
+      </div>
+
+      <br>
+      <br>
+  <div class="row">
+
+    <div class="col-sm-1">
+
+    </div>
+    <div class="col-sm-10">
+
+    	<div class="wraptocenter" style="text-align: center;">
+    		<img src= <%= "https://twitter.com/#{@app_idea.user_handle}/profile_image?size=original" %> class="img-circle" alt="" style="width:80px; height:80px; margin-top:30px;">
+    	</div>
+
+      <div class="question" style="text-align:center; margin-top:30px; ">
+        <%= @app_idea.tweet %>
+      </div>
+
+
+      <div class="answer" style="text-align:center; color:#808080; font-size: 140%;">
+        An app idea from @<%= @app_idea.user_handle%>
+      </div>
+
+      <div class="answer" style="text-align: center;">
+
+
+	        <% if signed_in? %>
+	        	<% if can? :update, @app_idea %>
+	        		<%= link_to 'Edit', edit_app_idea_path(@app_idea), { :class=>"btn action-btn" }  %>
+	        	<% end %>
+	        <% else %>
+		        <a href="/users/auth/twitter" class="btn action-btn">Edit</a>
+	        <% end %>
+
+      		<a class="twitter_link btn action-btn" role="button" href=<%="https://twitter.com/home?status=Check%20out%20this%20app%20idea!%20If%20it%20gets%20enough%20up-votes%20it%20could%20be%20created%20for%20free%20by%20%40NapknApps!%20-%3E%20www.napkn.io/app_ideas/#{@app_idea.id}"%> target="_blank">Share</a>
+
+      </div>
+
+
+      <br>
+      <br>
+<hr>
+<br>
+	<% if @app_idea.details.to_s.length == 0 %>
+
+      <div class="answer" style="text-align:left; color:#808080; font-size: 140%;">
+        No details provided yet. Is this your idea? Click edit to add some details! Once you've edited it you can then share to get more up-votes. If an app is in the top 3 most up-voted it could be built for free! Awesome!
+      </div>
+
+
+	<% else %>
+
+      <div class="answer" style="text-align:left; font-size: 140%;">
+        <%= simple_format(@app_idea.details) %>
+      </div>
+
+	<% end %>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+    </div>
+  </div>
+</div>
+
+     
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+

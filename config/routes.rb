@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :app_idea_upvotes
+
   devise_for :users, class_name: 'FormUser', :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
 
   devise_scope :user do

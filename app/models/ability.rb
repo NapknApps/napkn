@@ -17,6 +17,12 @@ class Ability
         end
       end
 
+      can :manage, AppIdeaUpvote do |app_idea_upvote|
+        if app_idea_upvote.user_id == user.id
+          true
+        end
+      end
+
     end
 
     # Define abilities for the passed in user here. For example:

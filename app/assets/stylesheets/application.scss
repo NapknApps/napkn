@@ -7,6 +7,11 @@ body {
 
 }
 
+.app-idea a:link { color: #000000; text-decoration: none; }
+.app-idea a:visited { color: #000000; text-decoration: none; }
+.app-idea a:hover { color: #000000; text-decoration: none; }
+.app-idea a:active { color: #000000; text-decoration: none; }
+
 .navbar {
   margin-bottom: 0;
 }
@@ -161,11 +166,31 @@ body {
   font-weight: 400;
 }
 
+.action-btn-edge {
+  background: #ffffff;
+  color: #fe6e70;
+  border-color: #fe6e70;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 100%;
+  padding: 14px 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+
 .action-btn:hover { 
   border-color: #ffffff; 
   background-color: #f15658; 
   color: #ffffff;
 }
+
+.action-btn-edge:hover { 
+  border-color: #fe6e70; 
+  background-color: #ffffff; 
+  color: #fe6e70;
+}
+
 
 
 /* navbar */

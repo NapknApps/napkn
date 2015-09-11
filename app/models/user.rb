@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
 	devise :omniauthable, :registerable, :recoverable, :rememberable, :trackable
 	
+	has_many :app_idea_upvotes
+
 	def email_required?
   	false
 	end

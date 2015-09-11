@@ -4,10 +4,10 @@ require File.join(root, 'config', 'environment')
 log = File.join(root, 'log', 'stream.log')
 
 TweetStream.configure do |conf|
-  conf.consumer_key        = '15utLKJXcan5VfBZTfqrnkXdZ'
-  conf.consumer_secret     = 'DE9yeroPiZvM5geqG15e278J93hg7KjKNCp65Dfv5lARTaebwj'
-  conf.oauth_token         = '3332969963-ZLxPjZK547knNVpXCXtrXVGhvWBORAvfjuiGQoY'
-  conf.oauth_token_secret  = '2FVjXrvXVVx1XCPiRCxTn7Er5gsEBSn3zPkQzdYCsI9qi'
+  conf.consumer_key        = ENV['TWITTER_CONSUMER_KEY']
+  conf.consumer_secret     = ENV['TWITTER_CONSUMER_SECRET']
+  conf.oauth_token         = ENV['TWITTER_OAUTH_TOKEN']
+  conf.oauth_token_secret  = ENV['TWITTER_OAUTH_TOKEN_SECRET']
   conf.auth_method         = :oauth
 end
 

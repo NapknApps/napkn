@@ -15,4 +15,10 @@ class ApplicationController < ActionController::Base
       u.permit(:name, :email, :activities_last_viewed)
     end
   end
+
+
+  def after_sign_in_path_for(resource)
+    session["user_return_to"] || app_ideas_path
+  end
+
 end

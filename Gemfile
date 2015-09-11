@@ -51,3 +51,5 @@ gem 'cancancan'
 gem 'rolify'
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'simple_form'
+gem "js-routes"
