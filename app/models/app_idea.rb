@@ -7,21 +7,11 @@ class AppIdea < ActiveRecord::Base
 
 	def self.create_from_tweet(status)
 
-		create = true
-		if status.retweeted_status
-			create = false
-		end
-		if status.user.screen_name == "NapknApps"
-			create = false
-		end
-
-		if create
 		  create!(
 		    tweet: status.text,
 		    user_handle: status.user.screen_name,
 		    user_approved: true
 		  )
-		end
   end
 
 	def notify_user
