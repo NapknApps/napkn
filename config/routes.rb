@@ -33,6 +33,7 @@ Rails.application.routes.draw do
   get 'posts/creating_roll_out', :to => 'posts#creating_roll_out'
   get 'posts/creating_nomojo', :to => 'posts#creating_nomojo'
   get 'posts/creating_envoyer', :to => 'posts#creating_envoyer'
+  get 'posts/tweet_your_app_idea', :to => 'posts#tweet_your_app_idea'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
