@@ -1,0 +1,113 @@
+<nav class="navbar navbar-default" style="background-color: #fc6f73; border-color: #fc6f73;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><img src="/assets/logo_white.png" alt="" height="42" width="42" style="margin-top:-4px"/></a>
+    <ul class="nav navbar-nav navbar-right hidden-xs">
+      <li><a href="https://twitter.com/napknapps"><img src="/assets/twitter_logo_white.png" alt="" height="33" width="40"/></a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-1">
+		</div>
+    <div class="col-sm-10">
+			<div class="title">
+				Creating “rTab” #NapknAppWeek5
+			</div>
+		  <div class="media-body">
+		    <h4 class="media-heading"><i>Post By: <a href="http://twitter.com/zachwhelchel">Zach Whelchel</a> & <a href="http://twitter.com/wingertandrew">Andrew Wingert</a>, September 14th, 2015</i></h4>
+		  </div>
+			<br>
+			<br>
+			<br>
+			<div class="answer">
+				<p><a href="/apps/rtab">rTab</a> came from Andrew’s practical need to keep track of "who owes who" over the course of an event or weekend. You know those trips where everyone is splitting costs? rTab makes those occasions easier.</p>
+			</div>
+			<div class="question" style="margin-top: 60px">
+				Idea (Andrew)
+			</div>
+			<div class="answer">
+				<p>We wanted to create an app that allows one person to keep track for the group and makes it easy to simplify the payments afterwards. I spend a lot of time traveling with a group for freelance gigs and we usually keep track of the expenses in the notes app. Then, afterwards, I have to do the math and the payments aren’t simplified, meaning everyone owes everyone something instead of each person paying only one person a calculated amount.</p>
+				<p>When the event is over rTab helps you text everyone in your group the totals. The original goal was to support the payment process also, but time and the App Store guidelines made that hard to complete in a week. The idea is a practical one. It simplifies a task we all do routinely, and we think that merited creation.</p>
+			</div>
+			<div class="question" style="margin-top: 60px">
+				Naming (Zach)
+			</div>
+			<div class="answer">
+				<p>This app is a simple tool. It does one thing well. Utility apps are useful but usually don’t succeed in the app store by brand presence. When most users search for a utility they search for the function rather than a particular brand. It was important to us that the name reflected this so we chose rTab because when we thought of the actual use case the term “splitting the tab” seemed to be the most used explanation.</p>
+				<p>Here were some of the early rejects.</p>
+				<br>
+				<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="en" dir="ltr">Brainstorming app names for &quot;rTab&quot; w/ <a href="https://twitter.com/WingertAndrew">@WingertAndrew</a>, <a href="https://twitter.com/SamWebbExists">@SamWebbExists</a>, <a href="https://twitter.com/Nathaniel_Glass">@Nathaniel_Glass</a>. <a href="https://twitter.com/hashtag/NapknAppWeek5?src=hash">#NapknAppWeek5</a> <a href="http://t.co/tSCkZugIRr">pic.twitter.com/tSCkZugIRr</a></p>&mdash; Zach Whelchel (@ZachWhelchel) <a href="https://twitter.com/ZachWhelchel/status/630938996521205760">August 11, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+			<div class="question" style="margin-top: 60px">
+				Decisions (Andrew)
+			</div>
+			<div class="answer">
+				<p>We opted for a clean and familiar UI. Originally we considered a “bubble-like” approach where you see everyone’s image and select the person adding the expense, but simple tools should stick to simple paradigms.</p> 
+				<br>
+				<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="en" dir="ltr">Considering a simple tableview vs more bubble-orientated UI for &quot;rTab.&quot; <a href="https://twitter.com/hashtag/NapknAppWeek5?src=hash">#NapknAppWeek5</a> <a href="http://t.co/KaN5s3aUgs">pic.twitter.com/KaN5s3aUgs</a></p>&mdash; Zach Whelchel (@ZachWhelchel) <a href="https://twitter.com/ZachWhelchel/status/631891142557175808">August 13, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<br>
+				<p>I had wanted to add each user’s $Chashtag but realized that the input required would not add any additional functionality and that not all users prefer Square. It's easier for each person to share their $Cashtag than it is for one user to gather them all, record, and then send out. Although if there was a way to record a user’s hashtag for multiple events that would have made the input effort worth it to the user.</p>
+			</div>
+			<div class="question" style="margin-top: 60px">
+				Development (Zach)
+			</div>
+			<div class="answer">
+				<p>Creating rTab was fairly simple. We used standard UI elements and local storage. We leveraged contact book support to pull in friends and the app uses iOS’s messaging framework to start the group message at the end of an event. We also found TomSwift’s <a href="https://github.com/TomSwift/TSCurrencyTextField">TSCurrencyTextField</a> really helpful for validating monetary input.</p>
+				<br>
+				<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="en" dir="ltr">Always feels good to get things working... then make them look/feel good. On our way... <a href="https://twitter.com/hashtag/NapknAppWeek5?src=hash">#NapknAppWeek5</a> <a href="http://t.co/bTrpisdJd3">pic.twitter.com/bTrpisdJd3</a></p>&mdash; Zach Whelchel (@ZachWhelchel) <a href="https://twitter.com/ZachWhelchel/status/632262141031092224">August 14, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<br>
+				<p>Here's a look at the final version.</p>
+				<br>
+				<blockquote class="twitter-tweet tw-align-center" lang="en"><p lang="en" dir="ltr">Simple tool to keep track of split costs. Send text at end with simplified totals. <a href="https://twitter.com/hashtag/NapknAppWeek5?src=hash">#NapknAppWeek5</a> <a href="http://t.co/10vfbTVNK5">pic.twitter.com/10vfbTVNK5</a></p>&mdash; Zach Whelchel (@ZachWhelchel) <a href="https://twitter.com/ZachWhelchel/status/633172642338631680">August 17, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+			<div class="question" style="margin-top: 60px">
+				Links
+			</div>
+			<div class="answer">
+				<p>"rTab" is a practical tool to split costs with friends. Check it out on the App Store.</p> 
+				<a class="btn action-btn" role="button" href="https://itunes.apple.com/us/app/rtab-split-expense-tracker/id1031142816?mt=8" style="margin-right: 10px;">App Store</a>
+				<br>
+				<br>
+				<p>Want to join the conversation? Talk to the makers? Join us on Product Hunt.</p>
+				<a class="btn action-btn" role="button" href="http://www.producthunt.com/tech/rtab" style="margin-right: 10px;">Product Hunt</a>
+				<br>
+				<br>
+				<p>Have an idea for an awesome app? Submit it.</p>
+				<a href="/app_ideas" class="btn action-btn" role="button">Submit your app idea</a>
+				<br>
+				<br>
+				<p>Are you an app maker? Join us for a week to build a great MVP.</p>	
+				<a class="btn action-btn" role="button" href="/posts/calling_all_app_makers" style="margin-right: 10px;">Calling All App Makers</a>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div id="disqus_thread">
+			</div>
+			<script type="text/javascript">
+			    /* * * CONFIGURATION VARIABLES * * */
+			    var disqus_shortname = 'napkn';
+			    
+			    /* * * DON'T EDIT BELOW THIS LINE * * */
+			    (function() {
+			        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			    })();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
