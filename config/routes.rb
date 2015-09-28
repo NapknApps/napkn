@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   get 'apps/roll_out', :to => 'apps#roll_out'
   get 'apps/rtab', :to => 'apps#rtab'
   get 'apps/sweet_nothings', :to => 'apps#sweet_nothings'
+  get 'apps/ghost_commute', :to => 'apps#ghost_commute'
 
   get 'posts/', :to => 'posts#index'
 
